@@ -1,0 +1,34 @@
+<div class="container mt-5">
+    <button routerLink="/addlicense" class="btn btn-success">Add new license</button>
+    <div class="card card-body">
+        <table class="table striped" >
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>ZanID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Issude Date</th>
+                    <th>Expired Date</th>
+                    <!-- <th>Action</th> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let license of licenses">
+                    <td>{{license.id}}</td>
+                    <td>{{license.zanId}}</td>
+                    <td>{{license.firstName}}</td>
+                    <td>{{license.lastName}}</td>
+                    <td>{{license.address}}</td>
+                    <td>{{license.issudeDate}}</td>
+                    <td>{{license.expiredDate}}</td>
+                    <!-- <td>
+                        <button class="btn btn-primary"(click)="update(license.id)">update</button>
+                        <button class="btn btn-danger mx-2" (click)="delete(license.id)">delete</button>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

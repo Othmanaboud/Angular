@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title><p class="h2 text-center">Add new Boat</p> </mat-card-title>
+    <mat-card-content>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form #registerForm (ngSubmit)="onSubmit(registerForm)">
+                
+                    <label>Boat name</label>
+                    <input type="text"[(ngModel)]="boats.boatName" name="name" id="boat name" class="form-control">
+
+                    <label>Boat type</label>
+                    <input type="text"[(ngModel)]="boats.boatType"  name="name" id="boat type" class="form-control">
+                    <label>Boat size</label>
+                    <input type="text"[(ngModel)]="boats.boatSize"  name="name" id="boat size" class="form-control">
+
+                    <label>Stand of boat</label>
+                    <input type="text"[(ngModel)]="boats.standOfBoat"  name="name" id="stand of boat" class="form-control">
+                    <label>Date</label>
+                    <input type="date"[(ngModel)]="boats.date"  name="name" id="date" class="form-control">
+                    
+                    <button  class="btn btn-primary w-100 mt-2">Save</button>
+
+                </form>
+
+            </div>
+        </div>
+       
+    </mat-card-content>
+</mat-card>

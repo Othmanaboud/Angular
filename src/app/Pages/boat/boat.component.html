@@ -1,0 +1,52 @@
+
+<div class="container mt-5">
+
+<div class="card text-center bg-primary text-white">
+   
+    <div class="card-body">
+      <h5 class="card-title">Department Of Fisheries Zanzibar </h5>
+      <p class="card-text h2">Registration of fishing boat</p>
+    </div>
+  </div>
+  
+<mat-card class="mt-4">
+    <mat-card-header>
+        <mat-card-title><p>Boat registration</p></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <button routerLink="/newBoat" class="btn btn-primary">Add new boat</button>
+        <table class="table bordered" >
+            <thead>
+                <tr>
+                    <th>Sn</th>
+                    <th>Boat name</th>
+                    <th>Boat type</th>
+                    <th>Boat size</th>
+                    <th>Stand of boat</th>
+                    <th>Date of reg</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let boat of boats" #registerForm>
+                    <td>{{boat.id}}</td>
+                    <td>{{boat.boatName}}</td>
+                    <td>{{boat.boatType}}</td>
+                    <td>{{boat.boatSize}}</td>
+                    <td>{{boat.standOfBoat}}</td>
+                    <td>{{boat.date}}</td>
+                    <td>
+                        <button class="btn btn-primary" (click)=" viewBoat(boat.id)">view</button>
+                        <button  class="btn btn-success mx-2"(click)="update(boat.id)">edit</button>
+                        <button class="btn btn-danger mx-2" (click)="deleteBoat(boat.id)">delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+</mat-card>
+
+</div>
+
+
+

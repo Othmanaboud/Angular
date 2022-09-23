@@ -1,0 +1,40 @@
+.sidenav-container {
+  height: 100%;
+ 
+}
+
+.sidenav {
+  width: 245px;
+  
+}
+
+.sidenav .mat-toolbar {
+  /* background: inherit; */
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.btn1{
+  float: right;
+
+}
+.navbar{
+  justify-content: space-between;
+ 
+  
+}
+span{
+  padding-left: 1rem;
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}

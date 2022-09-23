@@ -1,0 +1,34 @@
+<mat-card>
+    <mat-card-title><p class="h2 text-center">Update License</p> </mat-card-title>
+    <mat-card-content>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form (ngSubmit)="onSubmit()">
+
+                    <label>ZanID</label>
+                    <input type="number"[(ngModel)]="licenses.zanId"  name="name" id="zanid" class="form-control">
+                    <label>First name</label>
+                    <input type="text"[(ngModel)]="licenses.firstName" name="name" id="name" class="form-control">
+
+                    <label>Last name</label>
+                    <input type="text"[(ngModel)]="licenses.lastName" name="name" id="name" class="form-control">
+
+                    <label>Address</label>
+                    <input type="text"[(ngModel)]="licenses.address"  name="name" id="name" class="form-control">
+
+                    <label>Issede date</label>
+                    <input type="date"[(ngModel)]="licenses.issudeDate"  name="name" id="date" class="form-control">
+
+                    <label>Expired date</label>
+                    <input type="date"[(ngModel)]="licenses.expiredDate"  name="name" id="date" class="form-control">
+                    
+                    <button  class="btn btn-primary w-100 mt-2">Save</button>
+
+                </form>
+
+            </div>
+        </div>
+       
+    </mat-card-content>
+</mat-card>
+

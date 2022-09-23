@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card card-body">
+                <h2 class="text-center">Login Form</h2>
+                <hr>
+                <p>
+                    <mat-form-field appearance="outline" class="w-100 example-full-width">
+                        <mat-label>User name</mat-label>
+                        <input matInput placeholder="userName">
+                    </mat-form-field>
+                </p>
+
+                <p>
+                    <mat-form-field appearance="outline" class="w-100 example-full-width">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="password">
+                    </mat-form-field>
+                </p>
+
+               <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+</div>

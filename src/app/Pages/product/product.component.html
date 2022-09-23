@@ -1,0 +1,28 @@
+<div class="container mt-5">
+<button routerLink="/newProduct"class="btn btn-primary">Add  product</button>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>sn</th>
+                <th>name</th>
+                <th>quality</th>
+                <th>quantity</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of  products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.quality}}</td>
+                <td>{{product.quantity}}</td>
+                <td>
+                    <button mat-raised-button color="primary" (click)="updateProduct(product.id)">edit</button>
+                    <button mat-raised-button color="accent" class="mx-2" (click)="delete(product.id)">delete</button>
+                    <button mat-raised-button color="success" class="mx-2">view</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

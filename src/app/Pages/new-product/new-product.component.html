@@ -1,0 +1,15 @@
+<div class="container">
+    <form  (ngSubmit)="onSubmit()">
+        <label for="">Name</label>
+        <input [(ngModel)]="product.name" type="text" name="name" id="name" class="form-control">
+
+        <label for="">Quality</label>
+        <input [(ngModel)]="product.quality" type="text" name="name" id="name" class="form-control">
+
+        <label for="">Quntiy</label>
+        <input [(ngModel)]="product.quantity" type="number" name="name" id="name" class="form-control">
+    <button class="btn btn-primary"> Save</button>
+    </form>
+
+    
+</div>
